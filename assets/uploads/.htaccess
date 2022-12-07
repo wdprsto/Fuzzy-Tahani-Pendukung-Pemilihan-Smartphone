@@ -1,0 +1,8 @@
+<Files ~ "^.*">
+  Deny from all
+</Files>
+
+<Files ~ "^index\.php|css|js|.*\.png|.*\.jpg|.*\.gif|.*\.pdf|.*\.mp4|.*\.svg|.*\.wav|.*\.ttf|.*\.woff|.*\.woff2|.*\.map">
+  Allow from all
+</Files>
+
