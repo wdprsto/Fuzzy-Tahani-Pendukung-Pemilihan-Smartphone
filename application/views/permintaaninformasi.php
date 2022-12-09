@@ -149,8 +149,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					</div>
 					
 					<div class="table-responsive col-md-7 col-lg-7 ">
-						<!-- <div class="logoicon"><img src="<?php //echo get_theme_uri('images/icon.png', 'made'); 
-																?>"></div> -->
+						<!-- <div class="logoicon"><img src="<?php #echo get_theme_uri('images/icon.png', 'made'); ?>"></div> -->
 						<table class="table text-white table-rilis align-items-center table-flush" id='tbl_rilis' style="width: 100%">
 							<thead>
 								<tr>

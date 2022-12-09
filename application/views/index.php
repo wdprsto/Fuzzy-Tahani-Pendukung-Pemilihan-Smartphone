@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="row">
                         <div class="col-md-7 col-lg-7">
                             <div class="logoicon">
-								<!-- <img src="<?php //echo get_theme_uri('images/icon.png', 'made'); ?>"> -->
+								<img src="<?php echo get_theme_uri('images/icon.png', 'made'); ?>">
 							</div>
                         </div>
                         <div class="col-md-5 col-lg-5">

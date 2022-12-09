@@ -9,8 +9,6 @@ class Pages extends CI_Controller
 
         $this->load->model(array(
             'release_model' => 'release',
-            'pengumuman_model' => 'pengumuman',
-			'layanan_model' => 'layanan'
         ));
     }
 

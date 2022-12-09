@@ -8,22 +8,13 @@ class Home extends CI_Controller
         parent::__construct();
 
         $this->load->model(array(
-            // 'product_model' => 'product',
-            // 'review_model' => 'review'
+ 
         ));
     }
 
     public function index()
     {
-        $params['title'] = 'Halaman Utama | Humas PN Langsa';
-
-        // $products['products'] = $this->product->get_all_products();
-        // $products['best_deal'] = $this->product->best_deal_product();
-        // $products['reviews'] = $this->review->get_all_reviews();
-
-        // get_header($params);
-        // get_template_part('home', $products);
-        // get_footer();
+        $params['title'] = 'Halaman Utama';
 
 		$this->load->view('index', $params);
 		// $this->load->view('header');

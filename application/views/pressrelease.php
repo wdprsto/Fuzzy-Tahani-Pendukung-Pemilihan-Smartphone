@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <!-- <a href="tentang-benar-dan-salah-pada-ui-design.html"> -->
                     <div class="row">
                         <div class="col-md-3 col-lg-3 ">
-							<!-- <div class="logoicon "><img src="<?php #echo get_theme_uri('images/icon.png', 'made'); ?>"></div> -->
+							<div class="logoicon "><img src="<?php echo get_theme_uri('images/icon.png', 'made'); ?>"></div>
                         </div>
                         <div class="table-responsive col-md-9 col-lg-9 mb-4">
                             <table class="table text-white table-rilis align-items-center table-flush" id='tbl_rilis' style="width: 100%">
