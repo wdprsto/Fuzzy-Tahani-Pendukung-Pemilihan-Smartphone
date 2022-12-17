@@ -90,7 +90,7 @@ class Pages extends CI_Controller
 				$performa = $this->input->get('performa');
 
 				$query = "SELECT 
-					id,
+					@rank:=@rank+1 AS id,
 					nama,
 					harga,
 					ROUND((
@@ -103,9 +103,10 @@ class Pages extends CI_Controller
 						baterai_${baterai}+
 						uk_layar_${uk_layar}+
 						harga_${harga}+
-						performa_${performa}
-					)/10,3) AS performa
-				FROM view_derajat2";
+						performa_${performa}+
+						so_${so}
+					)/(10+1),3) AS performa
+				FROM view_derajat2 WHERE performa <> 0 ORDER BY performa desc LIMIT 10";
 
 				$release['data'] = $this->release->get_release_by_query($query);
 				$response = $release;

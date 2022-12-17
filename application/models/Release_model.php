@@ -14,6 +14,7 @@ class Release_model extends CI_Model {
 
 	public function get_release_by_query($query)
     {
+		$this->db->query("SET @rank=0");
         return $this->db->query($query)->result_array();
     }
 

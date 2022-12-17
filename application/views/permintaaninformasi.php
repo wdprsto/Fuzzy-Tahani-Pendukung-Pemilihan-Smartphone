@@ -4,9 +4,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <!-- Main Body -->
 <div class="container">
 	<div class="row align-items-center justify-content-center">
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-12 col-lg-12"></div>
 			<div class="placeholdericon" >
 				<div class="row">
+					<div class="syarat-permintaan-info">
+						<p style="font-weight:bold" id="label-hasil">Pilih kriteria untuk mendapatkan rekomendasi</p>
+						<span style="color:white" id="text-hasil"></span>
+					</div>
 					<div class="col-md-5 col-lg-5" >
 						<form role="form" action="#" method="POST" id="addRekomendasiForm" enctype="multipart/form-data">
 							<div class="syarat-permintaan-info" style="max-height:330px; overflow-y:scroll">
@@ -146,22 +150,27 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="isi-formulir text-center">
 								<div class="tombol-isi-formulir"><button type="submit" name="submit" class="btn btn-danger my-2 addRekomendasiBtn ">Buat Rekomendasi</button></div>
 							</div>
+
 					</div>
 					
-					<div class="table-responsive col-md-7 col-lg-7 ">
-						<!-- <div class="logoicon"><img src="<?php #echo get_theme_uri('images/icon.png', 'made'); ?>"></div> -->
-						<table class="table text-white table-rilis align-items-center table-flush" id='tbl_rilis' style="width: 100%">
-							<thead>
-								<tr>
-									<th scope="col">Id</th>
-									<th scope="col">Nama</th>
-									<th scope="col">Harga</th>
-									<th scope="col">Nilai Rekomendasi</th>
-								</tr>
-							</thead>
+					<div class="col-md-7 col-lg-7 ">
 
-						</table>
+						<div class="table-responsive">
+							<!-- <div class="logoicon"><img src="<?php #echo get_theme_uri('images/icon.png', 'made'); ?>"></div> -->
+							<table class="table text-white table-rilis align-items-center table-flush" id='tbl_rilis' style="width: 100%">
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">Nama</th>
+										<th scope="col">Harga</th>
+										<th scope="col">Nilai Rekomendasi</th>
+									</tr>
+								</thead>
+
+							</table>
+						</div>
 					</div>
+
 
 				</div>
 				<div style="overflow:hidden; object-fit: cover;"></div>
@@ -185,14 +194,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			//MENAMPILKAN DATA BARANG PADA TABEL
 			var table = $('#tbl_rilis').DataTable({
 				"dom": 'Brt',
-				"select": true,
+				// "select": true,
 				// scrollabel
-				"scrollY": "330px", //"305.5px"
-				"scrollCollapse": true,
-				"paging": false,
-				//end scrollable
-				// "ajax": "<?php echo site_url('pages/release_api?action=list'); ?>",
-				"columns": [{
+				// "scrollY": "330px", //"305.5px"
+				// "scrollCollapse": true,
+				// "paging": false,
+				// "ajax": "<?php #echo site_url('pages/release_api?action=list'); ?>",
+				"columns": [
+					{
 						"data": "id"
 					},
 					{
@@ -211,10 +220,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					"infoEmpty": "Tidak ada data yang ditampilkan",
 					"zeroRecords": "Data belum tersedia",
 				},
-				'order': [
-					[3, 'desc']
-				]
+				// 'order': [
+				// 	[3, 'desc']
+				// ]
 			});
+		
 
 			//MENAMBAH PO BARU
 			$('#addRekomendasiForm').submit(function(e) {
@@ -222,8 +232,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 				//data diidapat dari penggunaan atribut "name" pada html. nanti bisa dipanggil di modal
 				var data = $(this).serialize();
-
+				
 				table.ajax.url("<?php echo site_url('pages/release_api?action=rekomendasi&'); ?>" + data).load();
+
+				var dictionary = 
+					{"kec_prosesor":"Kecepatan Prosesor",
+						"core_prosesor":"Core Prosesor",
+						"mem_internal":"Memori Internal",
+						"kam_utama":"Kamera Utama",
+						"kam_sekunder":"Kamera Sekunder",
+						"baterai":"Baterai",
+						"uk_layar":"Ukuran Layar",
+						"ram":"RAM",
+						"harga":"Harga",
+						"&so=":"&Sistem Operasi=",
+						"performa":"Performa"}
+				
+				for (const [key, value] of Object.entries(dictionary)) {
+					data = data.replace(key, value);
+				}
+
+				$('#label-hasil').html("Hasil Rekomendasi untuk kriteria"); 
+				$('#text-hasil').html(data.replaceAll("&",", ")); 
 
 			})
 		});
