@@ -14,11 +14,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<!-- Bootstrap core CSS -->
 		<link href="<?php echo get_theme_uri('css/bootstrap.min.css', 'made'); ?>" rel="stylesheet">        
-		<link rel="stylesheet" href="<?php echo get_theme_uri('js/plugins/@fortawesome/fontawesome-free/css/all.min.css', 'argon'); ?>" type="text/css">
+		<link rel="stylesheet" href="<?php echo get_theme_uri('js/plugins/@fortawesome/fontawesome-free/css/all.min.css', 'main'); ?>" type="text/css">
 		
 
 		<script src="<?php echo get_theme_uri('js/bootstrap.bundle.min.js', 'made'); ?>"></script>
-		<script src="<?php echo get_theme_uri('vendor/jquery/dist/jquery.min.js', 'argon'); ?>"></script>
+		<script src="<?php echo get_theme_uri('vendor/jquery/dist/jquery.min.js', 'made'); ?>"></script>
 
 		<!-- Custom styles for this page -->
 		<link href="<?php echo get_theme_uri('css/home.css', 'made'); ?>" rel="stylesheet">   
