@@ -28,54 +28,6 @@ CREATE TABLE `ci_sessions` (
   KEY `ci_sessions_timestamp` (`timestamp`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `ci_sessions` */
-
-insert  into `ci_sessions`(`id`,`ip_address`,`timestamp`,`data`) values 
-('0p4rqg77biioli2fn2i2ur8109fsdpf4','::1',1670161446,'__ci_last_regenerate|i:1670161440;redirection|s:40:\"aHR0cDovL2xvY2FsaG9zdC9zaWhhcGUvYWRtaW4=\";'),
-('g4d5a98cpsdq586hmk9339ap14ctomd6','::1',1670168913,'__ci_last_regenerate|i:1670168913;'),
-('vim8vsdk05n5n94rfeufar71cc87kl2m','::1',1670170728,'__ci_last_regenerate|i:1670170728;redirection|s:40:\"aHR0cDovL2xvY2FsaG9zdC9zaWhhcGUvYWRtaW4=\";'),
-('qdesps7vh4nb4pt8qbu7q30gob1o6se9','::1',1670171061,'__ci_last_regenerate|i:1670171061;__ACTIVE_SESSION_DATA|s:300:\"ee4e757ed393ec77f58226f14a5713c5c5857a0b2e54534d2a56985db6841356f0f799704ccd98322f4ddf5780a2f88829425b9807277a6e1acac96d705f9aaa1xm3/11MJLKYC+MO9MmMADgvdyYyhs/5yaDLPJUkoZWg6ZZUIjmjzeSbxhyAXVCUKoUn8qlQmGZ6SqkeltQX44URuh/xMTSVvg4pC30PGxjewij45rSxkhNCcwYaUgXsFLrprdniQJpsmxyNB5q6Qzsf/7rMbREiEAZnopAqhmI=\";redirection|N;'),
-('hcgntbg2d0llectuilmhov80pucb1lsk','::1',1670171862,'__ci_last_regenerate|i:1670171862;__ACTIVE_SESSION_DATA|s:300:\"ee4e757ed393ec77f58226f14a5713c5c5857a0b2e54534d2a56985db6841356f0f799704ccd98322f4ddf5780a2f88829425b9807277a6e1acac96d705f9aaa1xm3/11MJLKYC+MO9MmMADgvdyYyhs/5yaDLPJUkoZWg6ZZUIjmjzeSbxhyAXVCUKoUn8qlQmGZ6SqkeltQX44URuh/xMTSVvg4pC30PGxjewij45rSxkhNCcwYaUgXsFLrprdniQJpsmxyNB5q6Qzsf/7rMbREiEAZnopAqhmI=\";redirection|N;'),
-('6b5rvtnlrgurob81vlpu4do0e27masan','::1',1670171320,'__ci_last_regenerate|i:1670171267;redirection|N;'),
-('iiotcioef9ospjtlq32bsq4vil7cbhu3','::1',1670172182,'__ci_last_regenerate|i:1670172182;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('1ti5vs7laau9kiilgj4bat55ecu1tt5t','::1',1670172778,'__ci_last_regenerate|i:1670172778;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('dtdadio7v1pt960qd6tpdlj9eg8ck7pb','::1',1670173563,'__ci_last_regenerate|i:1670173563;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('ri3mfljikjiganhbbb288bif2tnh52m0','::1',1670174353,'__ci_last_regenerate|i:1670174353;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('smdu9ddkvh1418ldsss81r6n551tk4m3','::1',1670174834,'__ci_last_regenerate|i:1670174834;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('jumsbltbctt7h4fbtiqgr2bc8nqfh12t','::1',1670175371,'__ci_last_regenerate|i:1670175371;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('rc5gdvtljf6cum6op4aimjb9t5ussjl4','::1',1670176140,'__ci_last_regenerate|i:1670176140;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('34dcjhl0oedmb7842jui53em9e0ombkj','::1',1670176513,'__ci_last_regenerate|i:1670176513;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('3las8nfuccirb83jri00k16e99qt1p2g','::1',1670179093,'__ci_last_regenerate|i:1670179093;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('ebkprlgkgtbs3pnmbbcenvfsgvef6fti','::1',1670179735,'__ci_last_regenerate|i:1670179735;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('qsrndglh6nflpphg92ogrdsp0lsjroia','::1',1670180658,'__ci_last_regenerate|i:1670180658;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('v0not2ajtqc26tsfhs50qu0cfdge624f','::1',1670181469,'__ci_last_regenerate|i:1670181469;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('d7n5hle26siiu94j29blh9ipn2nkv59u','::1',1670181487,'__ci_last_regenerate|i:1670181469;__ACTIVE_SESSION_DATA|s:300:\"0d889727a1bd526c498ddd6a41a3d411deda79985c63be4e8fdb71e0f5086a07bdc7a62025d6d8f7f897dca7f1f98483f21e3e98144175d0933ce8f9399b805erxpsh4l/rxchnZmdWrIO7AVHlGlh/n5l7JpwwWmX73QJh5tuZXoroSUhBKLfXJYrpRsWoCvqefkVXwrNgHzPXK8Byt6Ul8ccnE4bu32Dl0wG+nk/OowuvgBWm1at2dckm2eeNoj63KqNSqIv/Fmtzq82VHdshHTzFvisMSJGL24=\";redirection|N;'),
-('cao7qehrkdusapc3hvqqk9l2hjf9bvt8','::1',1670182396,'__ci_last_regenerate|i:1670182396;'),
-('m4crjqumak4kip5smijldgb2ebjhgi1i','::1',1670181953,'__ci_last_regenerate|i:1670181820;redirection|N;'),
-('vht4c0jjeauv9ts1vrvpv2dso4jtvon0','::1',1670183294,'__ci_last_regenerate|i:1670183294;'),
-('fchci7cqab0gt7pj9rtmd2bf17tv4au6','::1',1670183602,'__ci_last_regenerate|i:1670183602;'),
-('6tntecqmedj7r2tg67p4lhdg13drb6lf','::1',1670183926,'__ci_last_regenerate|i:1670183926;'),
-('hq5fmedmkjpu9v39clfdgrulhlcbnfs4','::1',1670184482,'__ci_last_regenerate|i:1670184482;'),
-('0ldvnvq6qapn2sfses061ll1rsbdvlvj','::1',1670185027,'__ci_last_regenerate|i:1670185027;'),
-('avubomp0a17gu884sgc7052taieo6egs','::1',1670185368,'__ci_last_regenerate|i:1670185368;'),
-('fi28jjc9a1sqq2tjnm3eq5eqgdkv5vkn','::1',1670185674,'__ci_last_regenerate|i:1670185674;'),
-('f413bqhbv1mh6lbo0luc8vdcgaq46fnk','::1',1670186039,'__ci_last_regenerate|i:1670186039;'),
-('ttsbd57jj0bbaun19ff9opm1urjs0a71','::1',1670186355,'__ci_last_regenerate|i:1670186355;'),
-('g1c7l0tqqu9g8f2lj11kpn29m51e2lj9','::1',1670187114,'__ci_last_regenerate|i:1670187114;'),
-('dcur8v7cs7sa0cqji0dlancuh83d8ui9','::1',1670187573,'__ci_last_regenerate|i:1670187573;'),
-('8ckndvf3dogk1b195hgks0hcah8ksols','::1',1670187875,'__ci_last_regenerate|i:1670187875;'),
-('60d9er9s71iu2fmfo5delmvm8o7eua00','::1',1670188862,'__ci_last_regenerate|i:1670188862;'),
-('uc65k7nqsrtgdh8ln6dmn2pff44p6d1f','::1',1670189348,'__ci_last_regenerate|i:1670189348;'),
-('lsapksbu38is6k167mgiq1815fn1kgtb','::1',1670189812,'__ci_last_regenerate|i:1670189812;'),
-('656ddbvhs1lsjlg60rl93adepmeguinn','::1',1670190393,'__ci_last_regenerate|i:1670190393;'),
-('cnqtbfk2f29s0jucmqbrnbeuef79e1i2','::1',1670190699,'__ci_last_regenerate|i:1670190699;'),
-('78763245rrttb3ta0hkt914pinnmbh8g','::1',1670191116,'__ci_last_regenerate|i:1670191116;'),
-('ivvhgj4ggc7qmod8m25vqt8ftd42kkhu','::1',1670191438,'__ci_last_regenerate|i:1670191438;'),
-('cng5up4pfhbdb8p27kp3jl65re87uabo','::1',1670191995,'__ci_last_regenerate|i:1670191995;'),
-('igrscm1ug6u68isp9gtqgkopfh2kl9k6','::1',1670192128,'__ci_last_regenerate|i:1670191995;'),
-('8bsfvora8mu3k89ogp37d3e0jbp4u7c8','::1',1670217135,'__ci_last_regenerate|i:1670216977;redirection|N;__ACTIVE_SESSION_DATA|s:300:\"07d687899a98b9898f0ff32f40eb80db84c80380bc3c5a9e74d41aae546f1c133e77dd1d3f9d13e498ee477f3b6bb6282a8e66909949941ff4d12c8af41795a18KXlB3+kIwOH2F2nLlNT+5Bu7biVw4aedlUNlzCl5+3U9q0zinFLsoZG/Uzq2dkPka+WhBIH52J6UZL6pN/0c6iTU/K450edUlhikQ80MFg6LcpAdY8mxfGVOPTndrOJWLGw9LSASBVtfzpN9ve1a1lfwD9CbBtp92xzmB2m6wg=\";'),
-('jad1eiifvs1u3ijbaeir99j2e95qa7qa','::1',1670436205,'__ci_last_regenerate|i:1670436194;');
-
 /*Table structure for table `ci_settings` */
 
 DROP TABLE IF EXISTS `ci_settings`;
@@ -90,7 +42,7 @@ CREATE TABLE `ci_settings` (
 /*Data for the table `ci_settings` */
 
 insert  into `ci_settings`(`id`,`key`,`content`) values 
-(1,'current_theme_name','argon'),
+(1,'current_theme_name','made'),
 (2,'web_name','Pemilihan Smartphone'),
 (3,'web_phone_number',''),
 (4,'web_email',''),
@@ -115,8 +67,7 @@ CREATE TABLE `tb_admin` (
 /*Data for the table `tb_admin` */
 
 insert  into `tb_admin`(`adm_id`,`adm_nama`,`adm_password`,`adm_nohp`) values 
-('admin123','Administrator Web','$2y$10$Pp21XE3jIVWYUaxFQ8W81Obar3rW6aj8Iz/v0UrIEiff.OuYy0Wuq',''),
-('ehumaspnlangsa','Humas PN Langsa','$2y$10$IUxpkAuGDQVpO3JqV8R72.7kfUrkEEiRLZdOu.7c5rYQLW47XgEoy','08116884646');
+('admin123','Administrator Web','$2y$10$Pp21XE3jIVWYUaxFQ8W81Obar3rW6aj8Iz/v0UrIEiff.OuYy0Wuq','');
 
 /*Table structure for table `tb_laptop` */
 
