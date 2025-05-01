@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  # PHP Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sihape_app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=db_fuzzy
+
+  # MySQL Database
+  db:
+    image: mysql:5.7
+    container_name: sihape_db
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=db_fuzzy
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+    volumes:
+      - ./db_fuzzy.sql:/docker-entrypoint-initdb.d/db_fuzzy.sql
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data: 

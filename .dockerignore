@@ -1,0 +1,13 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+README.md
+contributing.md
+license.txt
+readme.rst
+_config.yml
+.editorconfig
+mysql_data/
+*.xlsx 
