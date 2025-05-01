@@ -106,7 +106,7 @@ class Pages extends CI_Controller
 						performa_${performa}+
 						so_${so}
 					)/(10+1),3) AS performa
-				FROM view_derajat2 WHERE performa <> 0 ORDER BY performa desc LIMIT 10";
+				FROM view_derajat WHERE performa <> 0 ORDER BY performa desc LIMIT 10";
 
 				$release['data'] = $this->release->get_release_by_query($query);
 				$response = $release;

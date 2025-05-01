@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'db_fuzzy',
+	'hostname' => getenv('MYSQL_HOST') ? getenv('MYSQL_HOST') : 'localhost',
+	'username' => getenv('MYSQL_USER') ? getenv('MYSQL_USER') : 'root',
+	'password' => getenv('MYSQL_PASSWORD') ? getenv('MYSQL_PASSWORD') : '',
+	'database' => getenv('MYSQL_DATABASE') ? getenv('MYSQL_DATABASE') : 'db_fuzzy',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
