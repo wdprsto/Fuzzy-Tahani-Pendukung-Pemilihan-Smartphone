@@ -383,13 +383,18 @@ a:hover { text-decoration: underline; }
 }
 .ps-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-family: var(--font-body);
   font-size: 14px;
   color: var(--ink-900);
 }
+.ps-table { background-clip: padding-box; }
+.ps-table thead tr {
+  background-image: var(--grad-hot);
+}
 .ps-table thead th {
-  background: var(--grad-hot);
+  background: transparent;
   color: var(--text-on-hot);
   font-family: var(--font-display);
   font-size: 16px;
