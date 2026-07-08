@@ -1,57 +1,37 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!doctype html>
-<html lang="en">
+<html lang="id-ID">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?php echo $title; ?></title>
-
-	<!-- Icon -->
-	<link rel="icon" href="<?php echo get_theme_uri('images/logo.png', 'made'); ?>">
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo get_theme_uri('css/bootstrap.min.css', 'made'); ?>" rel="stylesheet">        
-    <script src="<?php echo get_theme_uri('js/bootstrap.bundle.min.js', 'made'); ?>"></script>
-	   
-
-    <!-- Custom styles for this page -->
-    <link href="<?php echo get_theme_uri('css/home.css', 'made'); ?>" rel="stylesheet">   
-
+    <link rel="icon" href="<?php echo get_theme_uri('images/logo.png', 'made'); ?>">
+    <link href="<?php echo get_theme_uri('css/phonestar.css', 'made'); ?>" rel="stylesheet">
   </head>
   <body>
-    <div class="separatorheader"></div>
+    <div class="ps-rainbow"></div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <div class="placeholdericon">
-                    <!-- <a href="tentang-benar-dan-salah-pada-ui-design.html"> -->
-                    <div class="row">
-                        <div class="col-md-7 col-lg-7">
-                            <div class="logoicon">
-								<img src="<?php echo get_theme_uri('images/icon.png', 'made'); ?>">
-							</div>
-                        </div>
-                        <div class="col-md-5 col-lg-5">
-                            <a href="<?php echo site_url('pages/permintaan_informasi'); ?>">
-                                <div class="contentplaceholdericon">
-                                    <div class="judulmenu">CEK REKOMENDASI</div>
-                                </div>
-                            </a>
-                            <a href="<?php echo site_url('pages/press_release'); ?>">
-                                <div class="contentplaceholdericon">
-                                    <div class="judulmenu">DAFTAR SMARTPHONE</div>
-                                </div>
-                            </a>
+    <section class="ps-hero">
+      <div class="ps-hot-band" aria-hidden="true"></div>
+      <div class="ps-hero__inner">
+        <span class="ps-wordmark ps-wordmark--lg">PHONE<span class="ps-wordmark__outline">STAR</span></span>
+        <p class="ps-lead" style="margin-top:12px">
+          Pilih kriteria, biarkan mesin fuzzy Tahani menghitung &mdash; dapatkan smartphone paling cocok untukmu.
+        </p>
+      </div>
+    </section>
 
+    <div class="ps-container" style="max-width:560px;padding-bottom:56px">
+      <span class="ps-eyebrow">System</span>
 
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>
+      <a class="ps-menu-tile ps-menu-tile--hot" href="<?php echo site_url('pages/rekomendasi_ponsel'); ?>">
+        <span class="ps-menu-tile__label">Cek Rekomendasi</span>
+      </a>
+
+      <a class="ps-menu-tile ps-menu-tile--ink" href="<?php echo site_url('pages/daftar_ponsel'); ?>">
+        <span class="ps-menu-tile__label">Daftar Smartphone</span>
+      </a>
     </div>
-</body>
+  </body>
 </html>

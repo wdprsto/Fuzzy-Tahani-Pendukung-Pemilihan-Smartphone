@@ -17,21 +17,21 @@ class Pages extends CI_Controller
         redirect('/');
     }
 
-	public function permintaan_informasi()
+	public function rekomendasi_ponsel()
     {
         $params['title'] = 'Rekomendasi Pemilihan HP';
-		$params['link'] = 'permintaan_informasi';
+		$params['link'] = 'rekomendasi_ponsel';
 		$this->load->view('header', $params);
-		$this->load->view('permintaaninformasi');
+		$this->load->view('rekomendasi_ponsel');
     }
 
-	public function press_release()
+	public function daftar_ponsel()
     {
         $params['title'] = 'Daftar Smartphone';
-		$params['link'] = 'press_release';
+		$params['link'] = 'daftar_ponsel';
 		$data['rilis'] = $this->release->get_all_release();
 		$this->load->view('header', $params);
-		$this->load->view('pressrelease', $data);
+		$this->load->view('daftar_ponsel', $data);
     }
 
 	public function release_api(){

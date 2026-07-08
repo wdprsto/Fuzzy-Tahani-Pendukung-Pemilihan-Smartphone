@@ -3,79 +3,57 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="id-ID">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-
     <title><?php echo get_web_name(); ?></title>
-
-
     <link rel="icon" href="<?php echo base_url('assets/uploads/sites/Logo.png'); ?>">
-
-    <link href="<?php echo get_theme_uri('custom/auth/login/css/owl.carousel.min.css'); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo get_theme_uri('custom/auth/login/css/bootstrap.min.css'); ?>" rel="stylesheet" />
-    <link href="<?php echo get_theme_uri('custom/auth/login/css/style.css'); ?>" rel="stylesheet" type="text/css" />
-
-    
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="<?php echo get_theme_uri('css/phonestar.css', 'made'); ?>" rel="stylesheet">
   </head>
-  
   <body>
-  <div class="d-lg-flex half">
-    <div class="bg order-1 order-md-2" style="background-image: url(<?php echo get_theme_uri('custom/auth/login/images/bg_1.jpg'); ?>);"></div>
-    <div class="contents order-2 order-md-1">
+    <div class="ps-rainbow"></div>
+    <div class="ps-auth">
+      <div class="ps-hot-band" aria-hidden="true"></div>
 
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-7">
-            <h3>Login SIHape</h3>
-            <p class="mb-4">Sistem Informasi <strong><?php echo get_web_name(); ?></strong></p>
-            
-            <?php if ($change_uname_notice) : ?>
-            <div class="flash-message">
-                <?php echo $change_uname_notice; ?>
-            </div>
-
-            <?php elseif ($flash_message) : ?>
-            <div class="flash-message">
-                <?php echo $flash_message; ?>
-            </div>
-            <?php endif; ?>
-
-            <?php if ($redirection) : ?>
-            <div class="flash-message">
-                Login untuk melanjutkan
-            </div>
-            <?php endif; ?>
-            
-            <?php echo form_open('auth/login/do_login'); ?>
-              <div class="form-group first">
-                <label for="username">Username</label>
-                <input type="text" name="username" value="<?php echo set_value('username', $old_username); ?>" class="form-control" placeholder="Username" minlength="4" maxlength="16" required>
-                <?php echo form_error('username'); ?>
-              </div>
-              <div class="form-group last mb-3">
-                <label for="password">Password</label>
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
-                <?php echo form_error('password'); ?>
-              </div>
-              
-              <div class="d-flex mb-5 align-items-center">
-              </div>
-
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
-              <?php echo form_close(); ?>
-            </form>
-          </div>
+      <div class="ps-auth__panel">
+        <div style="text-align:center;margin-bottom:20px">
+          <span class="ps-wordmark ps-wordmark--lg">PHONE<span class="ps-wordmark__outline">STAR</span></span>
         </div>
+
+        <div style="font-family:var(--font-display);font-size:28px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-900);text-align:center">
+          Login SIHape
+        </div>
+        <p style="text-align:center;font-size:13px;color:var(--ink-500);margin:6px 0 22px">
+          Sistem Informasi <strong style="color:var(--ink-900)"><?php echo get_web_name(); ?></strong>
+        </p>
+
+        <?php if ($change_uname_notice) : ?>
+          <div class="flash-message"><?php echo $change_uname_notice; ?></div>
+        <?php elseif ($flash_message) : ?>
+          <div class="flash-message"><?php echo $flash_message; ?></div>
+        <?php endif; ?>
+
+        <?php if ($redirection) : ?>
+          <div class="flash-message">Login untuk melanjutkan</div>
+        <?php endif; ?>
+
+        <?php echo form_open('auth/login/do_login'); ?>
+          <label class="ps-field">
+            <span class="ps-field__label">Username</span>
+            <input type="text" name="username" value="<?php echo set_value('username', $old_username); ?>"
+              class="ps-input" placeholder="Username" minlength="4" maxlength="16" required>
+            <?php echo form_error('username'); ?>
+          </label>
+          <label class="ps-field">
+            <span class="ps-field__label">Password</span>
+            <input type="password" name="password" class="ps-input" placeholder="Password" required>
+            <?php echo form_error('password'); ?>
+          </label>
+
+          <button type="submit" class="ps-btn ps-btn--primary ps-btn--lg ps-btn--block" style="margin-top:8px">
+            Log In
+          </button>
+        <?php echo form_close(); ?>
       </div>
     </div>
-
-    
-  </div>
-    <script src="<?php echo get_theme_uri('custom/auth/login/js/jquery-3.3.1.min.js'); ?>"></script>
-    <script src="<?php echo get_theme_uri('custom/auth/login/js/popper.min.js'); ?>"></script>
-    <script src="<?php echo get_theme_uri('custom/auth/login/js/bootstrap.min.js'); ?>"></script>
-    <script src="<?php echo get_theme_uri('custom/auth/login/js/main.js'); ?>"></script>
   </body>
 </html>
